@@ -22,7 +22,8 @@ It has a virtualenv (venv) ready to go with basic Flask tools (ex. Jinja) that y
 $ source venv/bin/activate
 ```
 
-It also includes two template files, a barebones server and a simple folder structure for your project.
+It also includes two template files, a barebones server and a simple folder structure for your project
+that meets Flask's structuring needs.
 
 Right now, it is optimized for my set-up, so it creates files in "../Documents/Programming/"
 If you would rather set up your base for your projects somewhere else, change the PROJECT_DIRECTORY
