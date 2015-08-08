@@ -19,7 +19,9 @@ parser = argparse.ArgumentParser(
     epilog='K.M.',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-DEFAULT_PATH = os.path.join('/Users/rhythm/Documents/Programming/', "untitled")
+PROJECT_DIRECTORY = '/Users/rhythm/Documents/Programming/'
+
+DEFAULT_PATH = os.path.join(PROJECT_DIRECTORY, "untitled")
 
 parser.add_argument('project_folder',
                     type=str,
@@ -33,12 +35,12 @@ args = parser.parse_args()
 
 unzip_location = args.path
 
-remotezip = open('/fl-t/kit.zip')
+remotezip = open(PROJECT_DIRECTORY + '/fl-t/kit.zip')
 
 zipfile_in_mem = cStringIO.StringIO(remotezip.read())
 z = zipfile.ZipFile(zipfile_in_mem)
 z.extractall(unzip_location)
 
-os.rename("/Documents/Programming/untitled", "/Documents/Programming/" + args.project_folder + "")
+os.rename(PROJECT_DIRECTORY + "untitled", PROJECT_DIRECTORY + args.project_folder + "")
 
 print "Flask template uploaded into folder called %s" %(args.project_folder)
