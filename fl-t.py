@@ -34,7 +34,7 @@ args = parser.parse_args()
 
 unzip_location = args.path
 
-remotezip = open('/Users/rhythm/Documents/Programming/makeshit/kit.zip')
+remotezip = open('/Users/rhythm/Documents/Programming/fl-t/kit.zip')
 
 zipfile_in_mem = cStringIO.StringIO(remotezip.read())
 z = zipfile.ZipFile(zipfile_in_mem)
