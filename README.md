@@ -4,6 +4,10 @@ fl-t: a command line tool for quick basic flask server generation
 To Install
 ----------
 
+Before you install it, please change the PROJECT_DIRECTORY variable to where you want your project folders to be stored. Currently, it is optimized for my set-up, so it creates files in "/Documents/Programming/"
+If you would rather set up your base for your projects somewhere else, change the PROJECT_DIRECTORY
+variable in fl-t.py as appropriate. 
+
 ```python
 $ python setup.py install
 ```
