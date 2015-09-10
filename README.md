@@ -34,3 +34,5 @@ If you would rather set up your base for your projects somewhere else, change th
 variable in fl-t.py as appropriate. 
 
 Currently includes Bootstrap and JQuery CDN links because I like having those handy. 
+
+**Note:** fl-t is still in beta, please feel free to let me know if you have any trouble getting it up and running. 
